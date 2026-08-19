@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDownRight, Mail } from "lucide-react";
+import { ArrowDownRight, Mail, FileDown } from "lucide-react";
 import Terminal from "./Terminal";
 import { scrollToSection } from "./Navbar";
 
@@ -120,6 +120,15 @@ export default function Hero() {
               View Projects
               <ArrowDownRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
             </button>
+            <a
+              href="/Oumar_Diop_CV.pdf"
+              download="Oumar_Diop_CV.pdf"
+              className="group flex items-center gap-2 border border-dev/60 px-7 py-3.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-dev transition-colors duration-300 hover:bg-dev/10 hover:shadow-[0_0_25px_rgba(0,217,255,0.25)]"
+              data-testid="hero-download-cv-btn"
+            >
+              <FileDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+              Download CV
+            </a>
             <button
               onClick={() => scrollToSection("#contact")}
               className="group flex items-center gap-2 px-2 py-3.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-dev transition-colors duration-300 hover:text-slate-50"

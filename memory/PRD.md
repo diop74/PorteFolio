@@ -29,6 +29,7 @@ Modern, dark-themed portfolio for a Software Engineer turned Cybersecurity Engin
 - Why Both: manifesto statement section with dual-accent payoff line
 - Contact: mock form with "Transmission received" toast, social link cards, pulsing availability badge
 - Sticky glass navbar with numbered links + mobile menu, Lenis smooth scrolling, scroll-reveal animations throughout, responsive (verified 390px), reduced-motion support
+- Real social links (LinkedIn, GitHub @diop74, TryHackMe @Djin3), real portrait photo in About, CV download button in hero serving /Oumar_Diop_CV.pdf
 
 ## Verified
 - All sections screenshot-tested on desktop + mobile; contact form submit → toast confirmed; no console errors blocking
@@ -36,5 +37,4 @@ Modern, dark-themed portfolio for a Software Engineer turned Cybersecurity Engin
 ## Backlog
 - P1: Real contact form delivery (Resend email or DB inbox) if wanted later
 - P2: Blog/writeups section for CTF walkthroughs
-- P2: Downloadable CV/resume button
 - P2: Matrix rain canvas variant for hero background
