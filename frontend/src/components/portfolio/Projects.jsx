@@ -96,7 +96,7 @@ export default function Projects() {
                   {p.title}
                 </h3>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/diop74"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${p.title} on GitHub`}

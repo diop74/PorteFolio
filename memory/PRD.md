@@ -34,9 +34,8 @@ Modern, dark-themed portfolio for a Software Engineer turned Cybersecurity Engin
 - All sections screenshot-tested on desktop + mobile; contact form submit → toast confirmed; no console errors blocking
 
 ## Backlog
-- P0: Replace placeholder social/GitHub URLs with real profile links
+- P0: Replace stock portrait with a real photo of Oumar
 - P1: Real contact form delivery (Resend email or DB inbox) if wanted later
-- P1: Real portrait photo of Oumar to replace stock image
 - P2: Blog/writeups section for CTF walkthroughs
 - P2: Downloadable CV/resume button
 - P2: Matrix rain canvas variant for hero background

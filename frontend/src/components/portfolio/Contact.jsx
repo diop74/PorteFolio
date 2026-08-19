@@ -7,9 +7,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const LINKS = [
-  { icon: Linkedin, label: "LinkedIn", handle: "/in/oumar-diop", href: "https://linkedin.com/", testid: "contact-linkedin-link" },
-  { icon: Github, label: "GitHub", handle: "@oumar-diop", href: "https://github.com/", testid: "contact-github-link" },
-  { icon: Trophy, label: "TryHackMe", handle: "@Djin3", href: "https://tryhackme.com/", testid: "contact-tryhackme-link" },
+  { icon: Linkedin, label: "LinkedIn", handle: "/in/oumar-diop-61b606222", href: "https://www.linkedin.com/in/oumar-diop-61b606222", testid: "contact-linkedin-link" },
+  { icon: Github, label: "GitHub", handle: "@diop74", href: "https://github.com/diop74", testid: "contact-github-link" },
+  { icon: Trophy, label: "TryHackMe", handle: "@Djin3", href: "https://tryhackme.com/p/Djin3", testid: "contact-tryhackme-link" },
 ];
 
 export default function Contact() {

@@ -37,7 +37,7 @@ export default function Achievements() {
               TryHackMe <span className="text-sec glow-sec">@Djin3</span>
             </h3>
             <a
-              href="https://tryhackme.com/"
+              href="https://tryhackme.com/p/Djin3"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-auto flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 transition-colors duration-300 hover:text-sec"
