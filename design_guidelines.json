@@ -1,0 +1,147 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+      "strategy": "The Anti-Default Rule. Strictly Monospace for an elite, terminal-inspired cyberpunk feel. Use tracking-tighter for huge headers, tracking-widest for small labels.",
+      "scales": {
+        "h1": "text-4xl md:text-5xl lg:text-6xl+ tracking-tighter font-black",
+        "h2": "text-3xl md:text-4xl tracking-tight font-bold",
+        "h3": "text-xl md:text-2xl tracking-tight font-medium"
+      }
+    },
+    "body": {
+      "fontFamily": "'IBM Plex Sans', 'Outfit', sans-serif",
+      "strategy": "Clean, highly legible geometric sans for reading paragraphs and descriptions.",
+      "size": "text-base md:text-lg text-slate-300 leading-relaxed"
+    },
+    "labels": {
+      "fontFamily": "'JetBrains Mono', monospace",
+      "style": "uppercase text-xs tracking-[0.2em] font-bold"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#0a0e17",
+      "surface": "#111623",
+      "surfaceGlass": "rgba(17, 22, 35, 0.7)"
+    },
+    "accents": {
+      "sec": "#00ff9d",
+      "dev": "#00d9ff",
+      "mutedSec": "rgba(0, 255, 157, 0.15)",
+      "mutedDev": "rgba(0, 217, 255, 0.15)"
+    },
+    "text": {
+      "primary": "#f8fafc",
+      "secondary": "#94a3b8",
+      "muted": "#64748b"
+    },
+    "strategy": "Archetype 7: Electric & Neon. Deepest void base (#0a0e17) to make the dual-accents (Green for SEC, Cyan for DEV) pop. Rely on 1px borders and intense text-shadow glows instead of flat colored blocks."
+  },
+  "visual_enhancers": {
+    "surfaces": [
+      {
+        "name": "Retro-Futurism Glass",
+        "useCase": "Sticky Header, floating terminal widgets",
+        "classes": "bg-[#0a0e17]/80 backdrop-blur-xl border border-white/10 shadow-[0_0_15px_rgba(0,255,157,0.05)]"
+      },
+      {
+        "name": "Terminal Chrome",
+        "useCase": "Project Cards, Skill Blocks",
+        "classes": "bg-[#111623] border border-white/10 hover:border-[#00ff9d]/50 transition-colors duration-300 relative overflow-hidden group"
+      }
+    ],
+    "textures": [
+      {
+        "name": "Matrix Grid",
+        "css": "background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 30px 30px;"
+      },
+      {
+        "name": "CRT Scanlines",
+        "css": "background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 2px);"
+      }
+    ],
+    "glows": {
+      "secGlow": "drop-shadow(0 0 8px rgba(0,255,157,0.6))",
+      "devGlow": "drop-shadow(0 0 8px rgba(0,217,255,0.6))"
+    }
+  },
+  "layouts": {
+    "spacing": "Generous Spacing Philosophy: p-6, p-8, py-24. Cards must have internal p-8. Massive gap-12 between sections.",
+    "hero": "Full height (min-h-screen). Layout: Split or overlapping. Kinetic typography masked line-by-line reveal on load. A floating interactive terminal widget on the side/bottom.",
+    "projectsGrid": "Mode A: The Tetris Grid. Mix 2-span and 1-span cards for asymmetry. grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8.",
+    "skillsSplit": "Two vertical pillars representing BUILD (Cyan) vs SECURE (Green). grid-cols-1 md:grid-cols-2 gap-12. Deeply contrasting columns.",
+    "sections": "Numbered chapters (e.g., '01 // HERO'). Always left-align section headers. Add a left border (border-l-2) matching the section's dominant accent color."
+  },
+  "motion": {
+    "scrolling": "Smooth momentum scrolling using standard CSS or lenis setup.",
+    "interactions": "Hover states must include slight lift (-translate-y-1) and neon border glow. Terminal text should have a blinking cursor step animation.",
+    "reveal": "Scroll-triggered staggered fade-in + slide-up for all sections using framer-motion."
+  },
+  "components": {
+    "buttons": {
+      "primary": "Pill-shaped or sharp rectangular, bordered with glowing accent text. hover:bg-[#00ff9d]/10 hover:text-[#00ff9d] transition-all. Minimalist but high impact.",
+      "secondary": "Ghost button with underline or arrow animation on hover."
+    },
+    "marquee": "Slow editorial marquee using react-fast-marquee. Massive outline text 'text-8xl font-black text-transparent [-webkit-text-stroke:1px_#334155]'. Words: 'BUILD // BREAK // SECURE // OPTIMIZE'.",
+    "badges": "Tiny tags inside project cards. Cyan text/bg for DEV. Green text/bg for SEC. Split gradient for DEV+SEC.",
+    "terminalWidget": "A fake CLI window with standard macOS traffic lights (red/yellow/green dots). Inside, a typing effect rotating through mock commands like 'nmap -sV target.sys', 'docker-compose up -d', 'nuclei -u target.com'."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "about_portrait",
+        "url": "https://images.unsplash.com/photo-1610644528431-9c978d455d27?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHxjeWJlcnNlY3VyaXR5JTIwZGV2ZWxvcGVyJTIwcG9ydHJhaXQlMjBkYXJrJTIwbW9kZXxlbnwwfHx8fDE3ODcxNzE3NTR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Dramatic dark portrait of developer for the ABOUT section."
+      },
+      {
+        "category": "project_infra",
+        "url": "https://images.unsplash.com/photo-1680992044138-ce4864c2b962?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxzZXJ2ZXIlMjByb29tJTIwYmx1ZSUyMGdyZWVuJTIwZGFya3xlbnwwfHx8fDE3ODcxNzE3NTR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Close up of server room with green/blue lights, ideal for 'Government Infrastructure Security Audit' project card background."
+      },
+      {
+        "category": "project_code",
+        "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxoYWNrZXIlMjBjb2RpbmclMjB0ZXJtaW5hbCUyMGRhcmt8ZW58MHx8fHwxNzg3MTcxNzU0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Matrix digital rain for 'sectools.py' or 'DoitYourSelf OS' project."
+      }
+    ]
+  },
+  "libraries": {
+    "required": [
+      "framer-motion",
+      "lucide-react",
+      "react-fast-marquee"
+    ],
+    "3d_optional": [
+      "@react-three/fiber",
+      "@react-three/drei"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use raw React and Tailwind to build highly customized layouts. Avoid pre-built Shadcn structures if they restrict the Tetris Grid or terminal aesthetic. However, use Shadcn forms/inputs for the Contact form.",
+    "The Hero section must feature an animated typing effect rotating through the provided roles.",
+    "Implement the background using a fixed positioned div with the Matrix Grid texture and radial gradient to fade out the edges.",
+    "Use data-testid on all interactive elements (e.g., data-testid='contact-submit-button').",
+    "Projects section should utilize a Bento-style grid. 1 main project spanning multiple columns, others single column.",
+    "Add 'prefers-reduced-motion' checks for heavy animations.",
+    "Do NOT use transparent backgrounds for the sticky header; use Retro-Futurism Glass."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx."
+  ]
+}
