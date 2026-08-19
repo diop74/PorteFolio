@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { GraduationCap, Building2, ShieldCheck, Code2 } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
-const PORTRAIT = "https://images.unsplash.com/photo-1610644528431-9c978d455d27?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHxjeWJlcnNlY3VyaXR5JTIwZGV2ZWxvcGVyJTIwcG9ydHJhaXQlMjBkYXJrJTIwbW9kZXxlbnwwfHx8fDE3ODcxNzE3NTR8MA&ixlib=rb-4.1.0&q=85";
+const PORTRAIT = "/oumar-portrait.jpg";
 
 const PATH = [
   { icon: GraduationCap, text: "Licence in Software Engineering — ESSTHS, Tunisia", tone: "dev" },
